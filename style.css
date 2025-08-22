@@ -1,0 +1,50 @@
+h1{
+    text-align: center;
+    background-color: yellow;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: xx-large;
+    color: rgb(18, 18, 203);
+    border: 1px solid rgb(24, 24, 24);
+    padding: 40px;
+    margin: 1%;
+}
+
+main{
+    text-align: left;
+    font-size: xx-large;
+    border: 3px solid blue;
+    padding: 5%;
+    margin: 1%;
+    background-color: wheat;
+}
+
+.container{
+    display: flex; /*FLEX IS USED TO DISPLAY THE FLEXIBLE BOXES IN THE WEB PAGE*/
+    justify-content: space-evenly;
+   
+}
+
+.box{ /* INFORMATION ABOUT THE BOXES IN THE CONTAINER.THEY HAVE BEEN BOTH IDENTIFIED BY ONE CLASS*/
+    width: 300px;
+    height: 300px;
+    border: 3px solid black;
+    padding: 3%;
+    margin: 3%;
+    border-radius: 4%;
+}
+
+.box img{ /*INFORMATION ABOUT THE IMAGES TO BE PUT INSIDE THE FLEX BOX*/
+    width: 300px;
+    height: 300px;
+    border-radius: 4%;
+}
+/* THIS IS A MEDIA QUERY. IT IS USED TO SCALE THE WEB PAGE TO DIFFERENT DEVICES*/
+@media (max-width: 600px) {
+    .container {
+      flex-direction: column; /* stack items top-to-bottom */
+      align-items: stretch;
+    }
+  }
+
+
+
